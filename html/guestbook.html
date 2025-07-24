@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Guestbook</title>
+</head>
+<body>
+    <h1>Guestbook</h1>
+    <form method="POST" action="/cgi-bin/guestbook.pl">
+        <label>Nome:</label>
+        <input type="text" name="nome"><br><br>
+        <label>Mensagem:</label><br>
+        <textarea name="mensagem" rows="5" cols="40"></textarea><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <h2>Mensagens:</h2>
+    <!--#exec cgi="/cgi-bin/guestbook.pl" -->
+</body>
+</html>

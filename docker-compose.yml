@@ -1,0 +1,9 @@
+services:
+  web:
+    image: hypoport/httpd-cgi
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/usr/local/apache2/htdocs
+      - ./cgi-bin:/usr/local/apache2/cgi-bin
+    restart: unless-stopped
